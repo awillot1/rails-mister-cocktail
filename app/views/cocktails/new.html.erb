@@ -1,0 +1,7 @@
+<h1>Cocktails#new</h1>
+<p>Find me in app/views/cocktails/new.html.erb</p>
+
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name, input_html: { class: "content-input" }, label_html: { class: "content-label" } %>
+  <%= f.submit "Create Cocktail" %>
+<% end %>
